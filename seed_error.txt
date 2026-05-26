@@ -1,0 +1,583 @@
+﻿python : Traceback 
+(most recent call 
+last):
+At line:1 char:105
++ ... \backend" ; 
+python -c "from seed 
+import *; 
+seed_database()" 2>&1 
+| Ou ...
++                 ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (Traceback (mo   
+ st recent call las    
+t)::String) [], Re    
+moteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1936, in 
+_exec_single_context
+    self.dialect.do_exe
+cutemany(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\default.py", 
+line 949, in 
+do_executemany
+    cursor.executemany(
+statement, parameters)
+sqlite3.OperationalErro
+r: no such table: users
+
+The above exception 
+was the direct cause 
+of the following 
+exception:
+
+Traceback (most recent 
+call last):
+  File "E:\Mini Project
+\Startupcart\backend\se
+ed.py", line 63, in 
+seed_database
+    db.commit()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 2030, in commit
+    trans.commit(_to_ro
+ot=True)
+  File "<string>", 
+line 2, in commit
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\state_changes.py"
+, line 137, in _go
+    ret_value = 
+fn(self, *arg, **kw)
+                
+^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 1311, in commit
+    
+self._prepare_impl()
+  File "<string>", 
+line 2, in 
+_prepare_impl
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\state_changes.py"
+, line 137, in _go
+    ret_value = 
+fn(self, *arg, **kw)
+                
+^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 1286, in 
+_prepare_impl
+    
+self.session.flush()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4331, in flush
+    
+self._flush(objects)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4466, in _flush
+    with 
+util.safe_reraise():
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\util\langhelpers.py",
+ line 224, in __exit__
+    raise exc_value.wit
+h_traceback(exc_tb)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4427, in _flush
+    
+flush_context.execute()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\unitofwork.py", 
+line 466, in execute
+    rec.execute(self)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\unitofwork.py", 
+line 642, in execute
+    util.preloaded.orm_
+persistence.save_obj(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\persistence.py", 
+line 93, in save_obj
+    _emit_insert_statem
+ents(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\persistence.py", 
+line 1048, in 
+_emit_insert_statements
+    result = 
+connection.execute(
+             
+^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1419, in execute
+    return meth(
+           ^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\sql\elements.py", 
+line 527, in 
+_execute_on_connection
+    return connection._
+execute_clauseelement(
+           ^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1641, in 
+_execute_clauseelement
+    ret = 
+self._execute_context(
+          
+^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1846, in 
+_execute_context
+    return self._exec_s
+ingle_context(
+           ^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1986, in 
+_exec_single_context
+    self._handle_dbapi_
+exception(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 2363, in 
+_handle_dbapi_exception
+    raise sqlalchemy_ex
+ception.with_traceback(
+exc_info[2]) from e
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1936, in 
+_exec_single_context
+    self.dialect.do_exe
+cutemany(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\default.py", 
+line 949, in 
+do_executemany
+    cursor.executemany(
+statement, parameters)
+sqlalchemy.exc.Operatio
+nalError: (sqlite3.Oper
+ationalError) no such 
+table: users
+[SQL: INSERT INTO 
+users (id, name, 
+email, password_hash, 
+role, is_active, 
+created_at) VALUES (?, 
+?, ?, ?, ?, ?, ?)]
+[parameters: [('cd04f5a
+28fd540c083bcbb74792943
+aa', 'Admin User', 'adm
+in@startupkart.com', '$
+pbkdf2-sha256$29000$OYd
+QCsHYu7dWag3hnNMagw$H3/
+cBwqllnNwJjAKCshrujYbTf
+B/1KCPUmXJtGhfWTA', 
+'ADMIN', 1, 
+'2025-12-30 
+03:36:03.816737'), ('dc
+0353afd8484fb68b780c155
+2aef81a', 'Test User 
+1', 'user1@test.com', '
+$pbkdf2-sha256$29000$ub
+dWCsGYc46xFqJ07p2Tcg$b9
+wHM5EedsRcMfPSz5PvNhs2q
+7GyGSfIUaEh51jLtrY', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('83
+997ca383884daeb58b6e4db
+7b2f0d4', 'Test User 
+2', 'user2@test.com', '
+$pbkdf2-sha256$29000$85
+6zttbam1NKKcWYk/Je6w$EM
+XR1t3ZMrw2w.4fXr1ql/9T.
+cOcrvlJcq5TTEzkiu0', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('bb
+85e294e517484d80970d983
+7b25ae4', 'Test User 
+3', 'user3@test.com', '
+$pbkdf2-sha256$29000$ob
+SW0lrLWSsFIIRQqvVe6w$Ny
+s51Snt1uxrmjmtVAYOmVY/7
+EkapFS7xwsupq4rO4E', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('e6
+273c18c3a74377b786468bf
+1ae50c3', 'Test User 
+4', 'user4@test.com', '
+$pbkdf2-sha256$29000$4V
+xLiZGyNoYQYgwBQCiltA$zJ
+f/3ddTBY7piQTeqXQDQrx7n
+RwCemsy6SI8Fd6/FPI', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('a7
+ff24f721044422b73addec2
+c3078f8', 'Test User 
+5', 'user5@test.com', '
+$pbkdf2-sha256$29000$RU
+jJ.X.vNWbsXUsJYUwpJQ$oa
+37gcO1It7vISffIw7ruUrvU
+STx1FfXUAwvZZIdbzo', 
+'USER', 1, '2025-12-30 
+03:36:03.816737')]]
+(Background on this 
+error at: https://sqlal
+che.me/e/20/e3q8)
+Traceback (most recent 
+call last):
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1936, in 
+_exec_single_context
+    self.dialect.do_exe
+cutemany(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\default.py", 
+line 949, in 
+do_executemany
+    cursor.executemany(
+statement, parameters)
+sqlite3.OperationalErro
+r: no such table: users
+
+The above exception 
+was the direct cause 
+of the following 
+exception:
+
+Traceback (most recent 
+call last):
+  File "<string>", 
+line 1, in <module>
+  File "E:\Mini Project
+\Startupcart\backend\se
+ed.py", line 63, in 
+seed_database
+    db.commit()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 2030, in commit
+    trans.commit(_to_ro
+ot=True)
+  File "<string>", 
+line 2, in commit
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\state_changes.py"
+, line 137, in _go
+    ret_value = 
+fn(self, *arg, **kw)
+                
+^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 1311, in commit
+    
+self._prepare_impl()
+  File "<string>", 
+line 2, in 
+_prepare_impl
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\state_changes.py"
+, line 137, in _go
+    ret_value = 
+fn(self, *arg, **kw)
+                
+^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 1286, in 
+_prepare_impl
+    
+self.session.flush()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4331, in flush
+    
+self._flush(objects)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4466, in _flush
+    with 
+util.safe_reraise():
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\util\langhelpers.py",
+ line 224, in __exit__
+    raise exc_value.wit
+h_traceback(exc_tb)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\session.py", 
+line 4427, in _flush
+    
+flush_context.execute()
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\unitofwork.py", 
+line 466, in execute
+    rec.execute(self)
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\unitofwork.py", 
+line 642, in execute
+    util.preloaded.orm_
+persistence.save_obj(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\persistence.py", 
+line 93, in save_obj
+    _emit_insert_statem
+ents(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\orm\persistence.py", 
+line 1048, in 
+_emit_insert_statements
+    result = 
+connection.execute(
+             
+^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1419, in execute
+    return meth(
+           ^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\sql\elements.py", 
+line 527, in 
+_execute_on_connection
+    return connection._
+execute_clauseelement(
+           ^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1641, in 
+_execute_clauseelement
+    ret = 
+self._execute_context(
+          
+^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1846, in 
+_execute_context
+    return self._exec_s
+ingle_context(
+           ^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1986, in 
+_exec_single_context
+    self._handle_dbapi_
+exception(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 2363, in 
+_handle_dbapi_exception
+    raise sqlalchemy_ex
+ception.with_traceback(
+exc_info[2]) from e
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\base.py", 
+line 1936, in 
+_exec_single_context
+    self.dialect.do_exe
+cutemany(
+  File "E:\Mini Project
+\Startupcart\.venv\Lib\
+site-packages\sqlalchem
+y\engine\default.py", 
+line 949, in 
+do_executemany
+    cursor.executemany(
+statement, parameters)
+sqlalchemy.exc.Operatio
+nalError: (sqlite3.Oper
+ationalError) no such 
+table: users
+[SQL: INSERT INTO 
+users (id, name, 
+email, password_hash, 
+role, is_active, 
+created_at) VALUES (?, 
+?, ?, ?, ?, ?, ?)]
+[parameters: [('cd04f5a
+28fd540c083bcbb74792943
+aa', 'Admin User', 'adm
+in@startupkart.com', '$
+pbkdf2-sha256$29000$OYd
+QCsHYu7dWag3hnNMagw$H3/
+cBwqllnNwJjAKCshrujYbTf
+B/1KCPUmXJtGhfWTA', 
+'ADMIN', 1, 
+'2025-12-30 
+03:36:03.816737'), ('dc
+0353afd8484fb68b780c155
+2aef81a', 'Test User 
+1', 'user1@test.com', '
+$pbkdf2-sha256$29000$ub
+dWCsGYc46xFqJ07p2Tcg$b9
+wHM5EedsRcMfPSz5PvNhs2q
+7GyGSfIUaEh51jLtrY', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('83
+997ca383884daeb58b6e4db
+7b2f0d4', 'Test User 
+2', 'user2@test.com', '
+$pbkdf2-sha256$29000$85
+6zttbam1NKKcWYk/Je6w$EM
+XR1t3ZMrw2w.4fXr1ql/9T.
+cOcrvlJcq5TTEzkiu0', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('bb
+85e294e517484d80970d983
+7b25ae4', 'Test User 
+3', 'user3@test.com', '
+$pbkdf2-sha256$29000$ob
+SW0lrLWSsFIIRQqvVe6w$Ny
+s51Snt1uxrmjmtVAYOmVY/7
+EkapFS7xwsupq4rO4E', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('e6
+273c18c3a74377b786468bf
+1ae50c3', 'Test User 
+4', 'user4@test.com', '
+$pbkdf2-sha256$29000$4V
+xLiZGyNoYQYgwBQCiltA$zJ
+f/3ddTBY7piQTeqXQDQrx7n
+RwCemsy6SI8Fd6/FPI', 
+'USER', 1, '2025-12-30 
+03:36:03.816737'), ('a7
+ff24f721044422b73addec2
+c3078f8', 'Test User 
+5', 'user5@test.com', '
+$pbkdf2-sha256$29000$RU
+jJ.X.vNWbsXUsJYUwpJQ$oa
+37gcO1It7vISffIw7ruUrvU
+STx1FfXUAwvZZIdbzo', 
+'USER', 1, '2025-12-30 
+03:36:03.816737')]]
+(Background on this 
+error at: https://sqlal
+che.me/e/20/e3q8)
+============================================================
+StartupKart v2.0 - Database Seeding
+============================================================
+
+[1/8] Creating users...
+
+ERROR during seeding: (sqlite3.OperationalError) no such table: users
+[SQL: INSERT INTO users (id, name, email, password_hash, role, is_active, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [('cd04f5a28fd540c083bcbb74792943aa', 'Admin User', 'admin@startupkart.com', '$pbkdf2-sha256$29000$OYdQCsHYu7dWag3hnNMagw$H3/cBwqllnNwJjAKCshrujYbTfB/1KCPUmXJtGhfWTA', 'ADMIN', 1, '2025-12-30 03:36:03.816737'), ('dc0353afd8484fb68b780c1552aef81a', 'Test User 1', 'user1@test.com', '$pbkdf2-sha256$29000$ubdWCsGYc46xFqJ07p2Tcg$b9wHM5EedsRcMfPSz5PvNhs2q7GyGSfIUaEh51jLtrY', 'USER', 1, '2025-12-30 03:36:03.816737'), ('83997ca383884daeb58b6e4db7b2f0d4', 'Test User 2', 'user2@test.com', '$pbkdf2-sha256$29000$856zttbam1NKKcWYk/Je6w$EMXR1t3ZMrw2w.4fXr1ql/9T.cOcrvlJcq5TTEzkiu0', 'USER', 1, '2025-12-30 03:36:03.816737'), ('bb85e294e517484d80970d9837b25ae4', 'Test User 3', 'user3@test.com', '$pbkdf2-sha256$29000$obSW0lrLWSsFIIRQqvVe6w$Nys51Snt1uxrmjmtVAYOmVY/7EkapFS7xwsupq4rO4E', 'USER', 1, '2025-12-30 03:36:03.816737'), ('e6273c18c3a74377b786468bf1ae50c3', 'Test User 4', 'user4@test.com', '$pbkdf2-sha256$29000$4VxLiZGyNoYQYgwBQCiltA$zJf/3ddTBY7piQTeqXQDQrx7nRwCemsy6SI8Fd6/FPI', 'USER', 1, '2025-12-30 03:36:03.816737'), ('a7ff24f721044422b73addec2c3078f8', 'Test User 5', 'user5@test.com', '$pbkdf2-sha256$29000$RUjJ.X.vNWbsXUsJYUwpJQ$oa37gcO1It7vISffIw7ruUrvUSTx1FfXUAwvZZIdbzo', 'USER', 1, '2025-12-30 03:36:03.816737')]]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

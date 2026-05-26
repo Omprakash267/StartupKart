@@ -1,0 +1,69 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# Validation & Settings
+pydantic[email]
+pydantic-settings
+
+# Authentication & Security
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Environment & Configuration
+python-dotenv
+
+# HTTP Clients
+httpx
+requests
+
+# Payment Gateways
+razorpay
+stripe
+
+# PDF Generation
+reportlab
+weasyprint
+PyPDF2
+
+# Email & SMS
+aiosmtplib
+twilio
+jinja2
+
+# Redis & Caching
+redis>=5.0.0
+redis[hiredis]
+aioredis>=2.0.1
+
+# Background Tasks
+celery[redis]>=5.3.0
+jinja2
+
+# WebSockets
+websockets>=12.0
+
+# File Handling
+openpyxl
+pandas
+python-csv
+
+# Testing
+pytest
+pytest-asyncio
+
+# Utilities
+python-dateutil
+pytz
+
+# Market Intelligence Agents
+beautifulsoup4
+lxml
+numpy
+scikit-learn

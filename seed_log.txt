@@ -1,0 +1,51 @@
+E:\Mini Project\Startupcart\Startupcart\backend\seed.py:172: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  date = datetime.utcnow() - timedelta(days=days_ago)
+E:\Mini Project\Startupcart\Startupcart\backend\seed.py:199: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  order_date = datetime.utcnow() - timedelta(days=random.randint(1, 180))
+E:\Mini Project\Startupcart\Startupcart\backend\seed.py:305: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  valid_until=datetime.utcnow() + timedelta(days=7),
+Using database at: E:\Mini Project\Startupcart\Startupcart\backend\startupkart.db
+============================================================
+StartupKart v2.0 - Database Seeding
+============================================================
+
+[0/8] Cleaning existing data...
+
+[1/8] Creating users...
+    Created 1 admin + 5 test users
+
+[2/8] Creating products (100+ matching frontend)...
+    Created 116 products (matching frontend IDs)
+
+[3/8] Generating 10-year price history...
+    Created 60552 price history records
+
+[4/8] Creating sample orders...
+    Created 9 orders with items and invoices
+
+[5/8] Creating notifications...
+    Created 5 notifications
+
+[6/8] Creating recommendations...
+    Created 10 recommendations
+
+[7/8] Creating price alerts...
+    Created 10 price alerts
+
+[8/8] Database seeding complete!
+
+============================================================
+SUMMARY
+============================================================
+Users: 6 (1 admin + 5 regular)
+Products: 116
+Price History: 60552
+Orders: 9
+Notifications: 5
+Recommendations: 10
+Price Alerts: 10
+
+Login Credentials:
+  Admin: admin@startupkart.com / admin123
+  User: user1@test.com / password123
+============================================================
